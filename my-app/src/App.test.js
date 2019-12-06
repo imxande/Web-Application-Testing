@@ -12,6 +12,6 @@ test('renders without crashing', () => {
 test('dashboard found', () => {
   const { getByText } = render(<App />);
 
-  // assert that the "lions" header is on the DOM
-  getByText(/Dashboard/i);
+  // looking for strikes in the DOM
+  getByText(/Strikes/i);
 });
