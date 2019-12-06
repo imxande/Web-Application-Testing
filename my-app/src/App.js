@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Dashboard from './components/Dashboard';
+import Display from './components/Display';
 
 class App extends React.Component{
   constructor(){
@@ -13,7 +13,7 @@ class App extends React.Component{
   render(){
     return (
       <div>
-        <Dashboard />
+        <Display />
       </div>
     )
   }
