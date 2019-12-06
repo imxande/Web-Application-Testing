@@ -2,7 +2,7 @@ import React from 'react';
 
 function DashBoard(){
     return(
-        <div>
+        <div className = 'dashboard'>
             <h1>Dashboard</h1>
             <h2>My Player</h2>
             <button>Add a strike</button>

@@ -14,9 +14,10 @@ class App extends React.Component{
       hit: 0
     }
   }
+
   render(){
     return (
-      <div>
+      <div className = 'App'>
         <Display 
           strikes = {this.state.strikes}
           balls = {this.state.balls} 
