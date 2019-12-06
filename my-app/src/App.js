@@ -16,27 +16,57 @@ class App extends React.Component{
     }
   }
 
+  // addStrike Method
   addStrike = () =>{
-    this.setState({
-      strikes: this.state.strikes + 1
-    })
+    if (this.state.strikes === 2){
+      this.setState({
+        strikes: 0,
+        balls: 0
+      })
+    }
+    else {
+      this.setState({
+        strikes: this.state.strikes + 1
+      })
+    }
   }
-
+   
+  // add ball method
   addBall = () =>{
-    this.setState({
-      balls: this.state.balls + 1
-    })
+    if (this.state.balls === 3){
+      this.setState({
+        strikes: 0,
+        balls: 0
+      })
+    }
+    else {
+      this.setState({
+        balls: this.state.balls + 1
+      })
+    }
   }
 
+  // add foul method
   addFoul = () =>{
-    this.setState({
-      foul: this.state.foul + 1
-    })
+  
+    if (this.state.strikes === 2){
+      this.setState({
+        strikes: 2,
+
+      })
+    }
+    else {
+      this.setState({
+        strikes: this.state.strikes + 1,
+      })
+    }
   }
 
+  // add hit method
   addHit = () =>{
     this.setState({
-      hit: this.state.hit + 1
+      strikes: 0,
+      balls: 0
     })
   }
 
