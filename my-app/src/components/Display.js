@@ -1,14 +1,14 @@
 import React from 'react';
+import DashBoard from './DashBoard';
 
 function Display(props){
     return(
         <div>
-            <h1>Dashboard</h1>
-            <h2>My Player</h2>
+            <DashBoard />
             <p>Strikes: {props.strikes}  </p>
-            <button>Add a strike</button>
             <p>Balls: {props.balls} </p>
-            <button>Add a ball</button>
+            <p>Foul: {props.foul} </p>
+            <p>Hit: {props.hit} </p>
         </div>
     )
 }
