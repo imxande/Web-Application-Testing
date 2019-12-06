@@ -4,10 +4,10 @@ function Display(props){
     return(
         <div>
             <h1>Dashboard</h1>
-            <h2>Players Name:</h2>
-            <p>Strikes: 0  </p>
+            <h2>My Player</h2>
+            <p>Strikes: {props.strikes}  </p>
             <button>Add a strike</button>
-            <p>Balls: 0 </p>
+            <p>Balls: {props.balls} </p>
             <button>Add a ball</button>
         </div>
     )

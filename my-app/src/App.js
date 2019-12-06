@@ -5,15 +5,18 @@ import Display from './components/Display';
 class App extends React.Component{
   constructor(){
     super();
-    // this.state = {
-    //   strikes = 0,
-    //   balls = 0
-    // }
+    this.state = {
+      strikes: 0,
+      balls: 0
+    }
   }
   render(){
     return (
       <div>
-        <Display />
+        <Display 
+          strikes = {this.state.strikes}
+          balls = {this.state.balls} 
+        />
       </div>
     )
   }
